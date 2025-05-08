@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  app:
+    build: .         # ローカルの Dockerfile を使ってビルド
+    ports:
+      - "3000:3000"  # ホストの3000→コンテナの3000をマッピング
